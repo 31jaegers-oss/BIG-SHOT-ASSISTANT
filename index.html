@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#100b18"><title>BIG SHOT ASSISTANT</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app-shell">
+<header class="topbar"><div class="brand-mark">[[$]]</div><div><p class="eyebrow">WELCOME TO THE SHOW</p><h1>BIG SHOT <span>ASSISTANT</span></h1></div><div class="status"><i></i> LOCAL INTERFACE</div></header>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">YOUR PERSONAL DESK HELPER</p><h2>WHAT'S THE<br><span>BIG QUESTION?</span></h2><p class="subtext">Ask stuff, drop in a screenshot, and get help without leaving this tab.</p></div><div class="mascot" aria-hidden="true"><div class="screen-face"><b>◉</b><b>◉</b><strong>▱</strong></div><div class="deal">A DEAL<br>YOU CAN'T<br>REFUSE!</div></div></section>
+<section class="chat-panel" aria-label="Chat assistant"><div class="chat-heading"><div><span class="live-dot"></span> THE CHATROOM</div><button id="clearChat" class="quiet-button" type="button">CLEAR CHAT</button></div>
+<div id="messages" class="messages" aria-live="polite"><article class="message assistant"><div class="speaker">BIG SHOT</div><p>HEY THERE, [[VALUED CUSTOMER]]! Your assistant station is READY. Ask me something or attach a screenshot to get started!</p></article></div>
+<div id="attachmentPreview" class="attachment-preview" hidden><img id="previewImage" alt="Screenshot preview"><div><strong id="fileName"></strong><button id="removeImage" type="button" class="quiet-button">REMOVE</button></div></div>
+<form id="chatForm" class="composer"><label class="attach-button" for="imageInput" title="Attach an image">＋</label><input id="imageInput" type="file" accept="image/*" hidden><textarea id="messageInput" rows="1" placeholder="TYPE YOUR MESSAGE HERE..." aria-label="Your message"></textarea><button id="sendButton" class="send-button" type="submit">SEND ↗</button></form>
+<div class="composer-foot"><span>TIP: Paste a screenshot with Ctrl + V.</span><span>DON'T SHARE PASSWORDS OR PRIVATE INFO.</span></div></section>
+<footer><span>BIG SHOT ASSISTANT</span><span id="connectionNote">DEMO MODE · AI BACKEND NOT CONNECTED</span></footer>
+</main><script src="app.js"></script></body></html>
